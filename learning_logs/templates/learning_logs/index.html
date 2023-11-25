@@ -1,0 +1,17 @@
+{% extends 'learning_logs/base.html' %}
+
+{% block page_header %}
+  <div class="p-3 mb-4 bg-light border rounded-3">
+    <div class="container-fluid py-4">
+      <h1 class="display-3">Welcome to ShareMind.</h1>
+      
+      <p class="lead">
+        Create your Learning Log to organize topics you're exploring. Add entries to capture new insights, summaries, or discoveries about each topic. Connect with others, share your knowledge, and explore diverse perspectives through collaborative discussions. 
+        Start by adding topics you're passionate about and contributing entries to build a collective space of shared wisdom and learning.
+      </p>
+
+      <a class="btn btn-primary btn-lg mt-1"
+          href="{% url 'accounts:register' %}">Register &raquo;</a>
+    </div>
+  </div>
+{% endblock page_header %}
